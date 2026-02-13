@@ -7,7 +7,7 @@ from openai import OpenAI
 import os
 
 app = FastAPI()
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI()
 
 DB_FILE = "pipeline.db"
 
